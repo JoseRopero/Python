@@ -1,46 +1,95 @@
-#Sesión 1. 
+from turtle import st
 
+#Sesión 1.
+
+#1. Salidas
+print("SALIDAS:")
 print("Hola mundo\nMi nombre es Jose")  # Con '\n' hacemos un salto de linea.
+dato = 5
+print("El dato es: {0}".format(dato))  # Esta es una manera de imprimir la variable.
+print(f"El dato es: {dato}")  # Otra manera de darle formato.
+print()
 
-# Operaciones con str.
-
+#2. Operaciones con str.
+print("OPERACIONES CON STR:")
 cadena = 'hola, Vamos a empezAr con Pythom'
-print(type(cadena))  # Con type nos muestra el tipo de variable.
+longitudC = len(cadena)  # Para saber la longitud de una cadena.
+print(f"La longitud de la cadena es: {longitudC}")
+print(f"La variable es de tipo: {type(cadena)}")  # Con type nos muestra el tipo de variable.
 print(cadena.capitalize())  # Con capitalize, la primera letra en mayúsculas y las demás las pasa a minusculas.
 print(cadena.title())  # En mayúsculas la primera letra de cada palabra.
 print(cadena.lower())  # Todas en minúsculas
 print(cadena.upper())  # En mayúsculas.
-print(cadena.replace('hola', 'Guay'))  # Reemplaza la palabra.
-print(cadena.find('Vamos'))  # Busca una palabra.
+print(f"Reemplazamos la primera palabra: {cadena.replace('hola', 'Guay')}")  # Reemplaza la palabra.
+print(f"Buscamos la palabra 'Vamos': {cadena.find('Vamos')}")  # Busca una palabra.
 
 listaTexto = cadena.split()  # Pasa la cadena a una lista.
+print(f"Pasamos una cadena a lista: {listaTexto}")
 cadena2 = ' '.join(listaTexto)  # Pasa una lista a una cadena con espacios.
 cadena3 = '-'.join(listaTexto)  # Entre las comillas podemos poner lo que queramos
 print(cadena3)
+print()
 
-# Trabajamos con las listas.
+#3. Conversiones de datos.
+print("CONVERSIONES:")
+n = int("25")
+print(n)
+stringN = str(n)
+print("El numero es: " + stringN)  # Con los string podemos usar la concatenacion.
+n1 = abs(-9)  #Valor absoluto
+print(f"El valor absoluto: {n1}")
+print()
 
+#4. Trabajamos con las listas.
+print("LISTAS:")
+vacio = []  # Se puede crear una lista vacía.
 lista1 = ['a', 'b', 'c', 'd', 'e', 'f', 'x', 'm']  # De esta manera inicializamos una lista.
 lista1.remove('c')  # Eliminamos un elemento de la lista.
 lista2 = ['g', 'h', 'i', 'j', 'k', 'l']
 lista1.append(lista2)  # Añadimos la lista2 a la lista1 (lista anidada).
-vacio = []  # Se puede crear una lista vacía.
+print(f"Lista anidada: {lista1}")
+lista1.insert(2, 'c')  # Para introducir un valor en el indice indicado.
+print(f"Añadimos un elemento a la lista en el indice 2: {lista1}")
+lista1.extend(['o', 'p', 'q'])  # Añade una lista de elementos a la original.
+print(f"Extendemos la lista: {lista1}")
+print(f"Ultimo elemento de la lista: {lista1[-1]}")  # Imprime el último elemento de la lista.
+print(f"Imprimo por rangos: {lista1[0:3]}")  #Imprime por rangos. El segundo parametro no esta incluido, llegaria al 2.
+print(lista1[:3])  # Es lo mismo que la linea anterior.
+print(lista1[2:])  # Imprime desde el segundo elemento hasta el final.
+print(f"Está la letra 'd' en  la lista? {'d' in lista1}")  # Devuelve true o false si el elemento esta en la lista.
+print(f"Cuantas veces aparece la letra 'x': {lista1.count('x')}")  # Count nos muestra cuantas veces aparece un elemento en la lista.
+lista1.pop()  # Elimina el ultimo elemento de la lista.
+print(lista1)
+lista3 = lista1 * 2  # Duplicamos la lista.
+print(lista3)
+lista3.clear()  # Vacia la lista.
+lista3 = [5, 9, 10, -4, 3, 59]
+print(lista3)
+lista3.sort()  # Ordenamos la lista.
+print(f"Ordenamos la lista: {lista3}")
+lista3.sort(reverse=True)
+print(f"Revertimos la lista: {lista3}")
+print()
 
-# Tupla
 
+#5. Tupla
+print("TUPLA:")
 tupla = ('a', 'b', 'c', 'd', 'e')  # Inicializamos una tupla.
+print(tupla)
+print()
 
-# Diccionario
-
+#6. Diccionario
+print("DICCIONARIO:")
 diccionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4}  # Inicializamos un diccionario.
 print(diccionario['a'])  # Imprime el valor de la clave.
 resultado = diccionario['a']  # Asignamos el valor a la variable.
 diccionario['c'] = 54  # Cambiamos el valor de la clave.
 diccionario.pop('d')  # Elimina la clave valor.
 del diccionario['a']  # Otra manera de eliminar.
+print()
 
-# Conjuntos (set)
-
+#7. Conjuntos (set)
+print("SETS:")
 a = {1, 2, 3, 4, 5}  # Inicializamos un set (Conjuntos). No se pueden repetir los elementos.
 b = {2, 5, 9, 8, 10}
 set1 = a | b  # Une los elementos no repetidos.
