@@ -74,8 +74,14 @@ print()
 
 #5. Tupla
 print("TUPLA:")
-tupla = ('a', 'b', 'c', 'd', 'e')  # Inicializamos una tupla.
+tupla = ('a', 'b',"Hola", 'c', 5, 6, 5.98,[1, 2, 3, 4], 'd', 'e')  # Inicializamos una tupla.
 print(tupla)
+print(tupla[-2])  # Imprime desde el final de la tupla.
+print(len(tupla))  # Longitud de la tupla. 
+lista4 = list(tupla)  # Pasamos la tupla a una lista.
+print(lista4)
+tupla1 = tuple(lista4)  # Pasamos la lista a una tupla.
+print(tupla1)
 print()
 
 #6. Diccionario
