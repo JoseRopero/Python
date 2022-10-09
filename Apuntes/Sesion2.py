@@ -34,6 +34,7 @@ print('')
 
 resultado = ((a >= 5 or c < 7) and (b == 5))
 print(resultado)
+print("")
 
 # Sentencias condicionales.
 
@@ -50,12 +51,16 @@ else:
     print("No ha introducido un mumero")
 print('Fin del if')
 
+print("")
+
 letra = input("Introduzca un caracter: ").lower()  # Lo pasamos a minusculas para no tener que comparar minusculas y mayusculas.
 
 if letra == 'a' or letra == 'e' or letra == 'i' or letra == 'o' or letra == 'u':
     print("Es una vocal")
 else:
     print("No es una vocal")
+    
+print("")
 
 # while
 
