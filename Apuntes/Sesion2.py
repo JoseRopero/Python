@@ -36,6 +36,16 @@ resultado = ((a >= 5 or c < 7) and (b == 5))
 print(resultado)
 print("")
 
+# is, is not, in, not in
+
+print('1 is 1', 1 is 1)                   # True - evalua si los dos son iguales
+print('1 is not 2', 1 is not 2)           # True - evalua si son distintos
+print('A in Asabeneh', 'A' in 'Asabeneh') # True - encuentra 'a' en el string
+print('B in Asabeneh', 'B' in 'Asabeneh') # False - La 'B' mayuscula no se encuentra en el string
+print('coding' in 'coding for all') # True - Encuentra la palabra
+print('a in an:', 'a' in 'an')      # True
+print('4 is 2 ** 2:', 4 is 2 ** 2)   # True
+
 # Sentencias condicionales.
 
 # if
