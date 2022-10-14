@@ -1,8 +1,8 @@
 from turtle import st
 
-#Sesión 1.
+# Sesión 1.
 
-#1. Salidas
+# 1. Salidas
 print("SALIDAS:")
 print("Hola mundo\nMi nombre es Jose")  # Con '\n' hacemos un salto de linea.
 dato = 5
@@ -10,9 +10,9 @@ print("El dato es: {0}".format(dato))  # Esta es una manera de imprimir la varia
 print(f"El dato es: {dato}")  # Otra manera de darle formato.
 print()
 
-#2. Operaciones con str.
+# 2. Operaciones con str.
 print("OPERACIONES CON STR:")
-cadena = 'hola, Vamos a empezAr con Pythom'
+cadena = 'hola, Vamos a empezar con Python'
 longitudC = len(cadena)  # Para saber la longitud de una cadena.
 print(f"La longitud de la cadena es: {longitudC}")
 print(f"La variable es de tipo: {type(cadena)}")  # Con type nos muestra el tipo de variable.
@@ -30,17 +30,17 @@ cadena3 = '-'.join(listaTexto)  # Entre las comillas podemos poner lo que queram
 print(cadena3)
 print()
 
-#3. Conversiones de datos.
+# 3. Conversiones de datos.
 print("CONVERSIONES:")
 n = int("25")
 print(n)
 stringN = str(n)
-print("El numero es: " + stringN)  # Con los string podemos usar la concatenacion.
-n1 = abs(-9)  #Valor absoluto
+print("El numero es: " + stringN)  # Con los string podemos usar la concatenación.
+n1 = abs(-9)  # Valor absoluto
 print(f"El valor absoluto: {n1}")
 print()
 
-#4. Trabajamos con las listas.
+# 4. Trabajamos con las listas.
 print("LISTAS:")
 vacio = []  # Se puede crear una lista vacía.
 lista1 = ['a', 'b', 'c', 'd', 'e', 'f', 'x', 'm']  # De esta manera inicializamos una lista.
@@ -48,21 +48,21 @@ lista1.remove('c')  # Eliminamos un elemento de la lista.
 lista2 = ['g', 'h', 'i', 'j', 'k', 'l']
 lista1.append(lista2)  # Añadimos la lista2 a la lista1 (lista anidada).
 print(f"Lista anidada: {lista1}")
-lista1.insert(2, 'c')  # Para introducir un valor en el indice indicado.
+lista1.insert(2, 'c')  # Para introducir un valor en el índice indicado.
 print(f"Añadimos un elemento a la lista en el indice 2: {lista1}")
 lista1.extend(['o', 'p', 'q'])  # Añade una lista de elementos a la original.
 print(f"Extendemos la lista: {lista1}")
 print(f"Ultimo elemento de la lista: {lista1[-1]}")  # Imprime el último elemento de la lista.
-print(f"Imprimo por rangos: {lista1[0:3]}")  #Imprime por rangos. El segundo parametro no esta incluido, llegaria al 2.
+print(f"Imprimo por rangos: {lista1[0:3]}")  # Imprime por rangos. El segundo parámetro no esta incluido, llegaría al 2.
 print(lista1[:3])  # Es lo mismo que la linea anterior.
 print(lista1[2:])  # Imprime desde el segundo elemento hasta el final.
 print(f"Está la letra 'd' en  la lista? {'d' in lista1}")  # Devuelve true o false si el elemento esta en la lista.
 print(f"Cuantas veces aparece la letra 'x': {lista1.count('x')}")  # Count nos muestra cuantas veces aparece un elemento en la lista.
-lista1.pop()  # Elimina el ultimo elemento de la lista.
+lista1.pop()  # Elimina el último elemento de la lista.
 print(lista1)
 lista3 = lista1 * 2  # Duplicamos la lista.
 print(lista3)
-lista3.clear()  # Vacia la lista.
+lista3.clear()  # Vacía la lista.
 lista3 = [5, 9, 10, -4, 3, 59]
 print(lista3)
 lista3.sort()  # Ordenamos la lista.
@@ -71,10 +71,9 @@ lista3.sort(reverse=True)
 print(f"Revertimos la lista: {lista3}")
 print()
 
-
-#5. Tupla
+# 5. Tupla
 print("TUPLA:")
-tupla = ('a', 'b',"Hola", 'c', 5, 6, 5.98,[1, 2, 3, 4], 'd', 'e')  # Inicializamos una tupla.
+tupla = ('a', 'b', "Hola", 'c', 5, 6, 5.98, [1, 2, 3, 4], 'd', 'e')  # Inicializamos una tupla.
 print(tupla)
 print(tupla[-2])  # Imprime desde el final de la tupla.
 print(len(tupla))  # Longitud de la tupla. 
@@ -84,7 +83,7 @@ tupla1 = tuple(lista4)  # Pasamos la lista a una tupla.
 print(tupla1)
 print()
 
-#6. Diccionario
+# 6. Diccionario
 print("DICCIONARIO:")
 diccionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4}  # Inicializamos un diccionario.
 print(diccionario['a'])  # Imprime el valor de la clave.
@@ -94,7 +93,7 @@ diccionario.pop('d')  # Elimina la clave valor.
 del diccionario['a']  # Otra manera de eliminar.
 print()
 
-#7. Conjuntos (set)
+# 7. Conjuntos (set)
 print("SETS:")
 a = {1, 2, 3, 4, 5}  # Inicializamos un set (Conjuntos). No se pueden repetir los elementos.
 b = {2, 5, 9, 8, 10}
@@ -102,13 +101,3 @@ set1 = a | b  # Une los elementos no repetidos.
 set2 = a & b  # Valores que se repiten.
 set3 = a - b  # Quita los repetidos en el segundo.
 set4 = a ^ b  # Diferencia simétrica, valores unicos.
-
-
-
-
-
-
-
-
-
-
