@@ -1,5 +1,5 @@
 # 🛠️ Apuntes Python 🛠️
-## [Sesión 1:](Sesion1.py)
+## [Sesión 1:](./Apuntes/Sesion1.py)
 1. Salida por pantalla
 2. Operaciones con cadena
 3. Conversiones de datos
