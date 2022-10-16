@@ -7,7 +7,7 @@
 5. Tupla
 6. Diccionario
 7. Conjuntos (set)
-## [Sesión 2:](Sesion2.py)
+## [Sesión 2:](./Apuntes/Sesion2.py)
 1. Condicionales: and, or
 2. Sentencias condicionales: if, while
 3. Palabras reservadas: break, continue
