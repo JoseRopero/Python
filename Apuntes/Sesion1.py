@@ -6,8 +6,11 @@ from turtle import st
 print("SALIDAS:")
 print("Hola mundo\nMi nombre es Jose")  # Con '\n' hacemos un salto de linea.
 dato = 5
+dato2 = 6
 print("El dato es: {0}".format(dato))  # Esta es una manera de imprimir la variable.
 print(f"El dato es: {dato}")  # Otra manera de darle formato.
+print("Otra formato : %d" % (dato))  # Otro formato: %s, %f, %d
+print(f"Para limitar los digitos de los decimales {dato} / {dato2} = {dato / dato2:.2f}")
 print()
 
 # 2. Operaciones con str.
@@ -22,6 +25,25 @@ print(cadena.lower())  # Todas en minúsculas
 print(cadena.upper())  # En mayúsculas.
 print(f"Reemplazamos la primera palabra: {cadena.replace('hola', 'Guay')}")  # Reemplaza la palabra.
 print(f"Buscamos la palabra 'Vamos': {cadena.find('Vamos')}")  # Busca una palabra.
+multilineaString = '''Hola, vamos con Python y las,
+multilínea.
+Otra manera de escribir texto en Python.
+'''
+print(multilineaString)  # Multilínea
+cadenaCharacter = "Jose"
+a, b, c, d = cadenaCharacter  # Pasar un String a una secuencia de caracteres.
+print(a)
+print(b)
+print(c)
+print(d)
+print()
+print(cadena[0])  # Accediendo a los caracteres del String por el índice.
+print(cadena[-1])  # El último carácter.
+ultimoIndice = len(cadena) - 1  # Sacamos el último índice de la cadena
+print(ultimoIndice)
+print(cadena[0:4])  # El primer número es el índice por el que empieza y el segundo es el término pero sin incluirlo.
+print(cadena[::-1])  # El tercer número es el step. En este caso es como un reverse del String.
+print(cadena[::2])
 
 listaTexto = cadena.split()  # Pasa la cadena a una lista.
 print(f"Pasamos una cadena a lista: {listaTexto}")
@@ -57,7 +79,8 @@ print(f"Imprimo por rangos: {lista1[0:3]}")  # Imprime por rangos. El segundo pa
 print(lista1[:3])  # Es lo mismo que la linea anterior.
 print(lista1[2:])  # Imprime desde el segundo elemento hasta el final.
 print(f"Está la letra 'd' en  la lista? {'d' in lista1}")  # Devuelve true o false si el elemento esta en la lista.
-print(f"Cuantas veces aparece la letra 'x': {lista1.count('x')}")  # Count nos muestra cuantas veces aparece un elemento en la lista.
+print(
+    f"Cuantas veces aparece la letra 'x': {lista1.count('x')}")  # Count nos muestra cuantas veces aparece un elemento en la lista.
 lista1.pop()  # Elimina el último elemento de la lista.
 print(lista1)
 lista3 = lista1 * 2  # Duplicamos la lista.
