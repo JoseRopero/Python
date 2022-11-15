@@ -1,5 +1,3 @@
-from turtle import st
-
 # Sesión 1.
 
 # 1. Salidas
@@ -9,8 +7,8 @@ dato = 5
 dato2 = 6
 print("El dato es: {0}".format(dato))  # Esta es una manera de imprimir la variable.
 print(f"El dato es: {dato}")  # Otra manera de darle formato.
-print("Otra formato : %d" % (dato))  # Otro formato: %s, %f, %d
-print(f"Para limitar los digitos de los decimales {dato} / {dato2} = {dato / dato2:.2f}")
+print("Otra formato : %d" % dato)  # Otro formato: %s, %f, %d
+print(f"Para limitar los dígitos de los decimales {dato} / {dato2} = {dato / dato2:.2f}")
 print()
 
 # 2. Operaciones con str.
@@ -19,17 +17,19 @@ cadena = 'hola, Vamos a empezar con Python'
 longitudC = len(cadena)  # Para saber la longitud de una cadena.
 print(f"La longitud de la cadena es: {longitudC}")
 print(f"La variable es de tipo: {type(cadena)}")  # Con type nos muestra el tipo de variable.
-print(cadena.capitalize())  # Con capitalize, la primera letra en mayúsculas y las demás las pasa a minusculas.
+print(cadena.capitalize())  # Con capitalize, la primera letra en mayúsculas y las demás las pasa a minúsculas.
 print(cadena.title())  # En mayúsculas la primera letra de cada palabra.
 print(cadena.lower())  # Todas en minúsculas
 print(cadena.upper())  # En mayúsculas.
+print(f"Cuantas veces aparece 'ho': {cadena.count('ho')}")  # El método count() retorna n veces aparece String.
+print(f"La cadena termina en on: {cadena.endswith('on')}")
 print(f"Reemplazamos la primera palabra: {cadena.replace('hola', 'Guay')}")  # Reemplaza la palabra.
 print(f"Buscamos la palabra 'Vamos': {cadena.find('Vamos')}")  # Busca una palabra.
-multilineaString = '''Hola, vamos con Python y las,
+multiString = '''Hola, vamos con Python y las,
 multilínea.
 Otra manera de escribir texto en Python.
 '''
-print(multilineaString)  # Multilínea
+print(multiString)  # Multilínea
 cadenaCharacter = "Jose"
 a, b, c, d = cadenaCharacter  # Pasar un String a una secuencia de caracteres.
 print(a)
@@ -76,11 +76,10 @@ lista1.extend(['o', 'p', 'q'])  # Añade una lista de elementos a la original.
 print(f"Extendemos la lista: {lista1}")
 print(f"Ultimo elemento de la lista: {lista1[-1]}")  # Imprime el último elemento de la lista.
 print(f"Imprimo por rangos: {lista1[0:3]}")  # Imprime por rangos. El segundo parámetro no esta incluido, llegaría al 2.
-print(lista1[:3])  # Es lo mismo que la linea anterior.
+print(lista1[:3])  # Es lo mismo que la línea anterior.
 print(lista1[2:])  # Imprime desde el segundo elemento hasta el final.
 print(f"Está la letra 'd' en  la lista? {'d' in lista1}")  # Devuelve true o false si el elemento esta en la lista.
-print(
-    f"Cuantas veces aparece la letra 'x': {lista1.count('x')}")  # Count nos muestra cuantas veces aparece un elemento en la lista.
+print(f"Cuantas veces aparece la letra 'x': {lista1.count('x')}")  # Count nos muestra cuantas veces aparece un elemento en la lista.
 lista1.pop()  # Elimina el último elemento de la lista.
 print(lista1)
 lista3 = lista1 * 2  # Duplicamos la lista.
