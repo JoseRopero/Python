@@ -121,14 +121,24 @@ print()
 
 # 5. Tupla. Tipo de colección ordenada e inmutable. Permite duplicados.
 print("TUPLA:")
+tupla_empty = ()  # Se puede crear una tupla vacía de dos maneras.
+tupla_empty2 = tuple()
+print(tupla_empty)
 tupla = ('a', 'b', "Hola", 'c', 5, 6, 5.98, [1, 2, 3, 4], 'd', 'e')  # Inicializamos una tupla.
 print(tupla)
 print(tupla[-2])  # Imprime desde el final de la tupla.
+print(tupla[3:8])
 print(len(tupla))  # Longitud de la tupla. 
 lista4 = list(tupla)  # Pasamos la tupla a una lista.
 print(lista4)
 tupla1 = tuple(lista4)  # Pasamos la lista a una tupla.
 print(tupla1)
+print("Hola" in tupla1)  # Para buscar si se encuentra un elemento en la tupla.
+tupla5 = ('f', 'g', 'h', 'i', 26)
+tupla6 = tupla1 + tupla5  # Con los operadores podemos unir dos o más tupla.
+print(tupla6)
+del tupla6  # Eliminamos la tupla
+
 print()
 
 # 6. Diccionario. Tipo de colección desordenada, modificable e indexada. No hay duplicados.
@@ -141,11 +151,58 @@ diccionario.pop('d')  # Elimina la clave valor.
 del diccionario['a']  # Otra manera de eliminar.
 print()
 
-# 7. Conjuntos(set). Colección desordenada, no indexada e inmutable pero podemos agregar nuevos elementos. No duplicados
+# 7. Conjuntos(set). Colección desordenada, no indexada e inmutable, podemos agregar nuevos elementos. No duplicados
 print("SETS:")
+set_empty = {}
+set_empty2 = set()
 a = {1, 2, 3, 4, 5}  # Inicializamos un set (Conjuntos). No se pueden repetir los elementos.
 b = {2, 5, 9, 8, 10}
-set1 = a | b  # Une los elementos no repetidos.
-set2 = a & b  # Valores que se repiten.
-set3 = a - b  # Quita los repetidos en el segundo.
-set4 = a ^ b  # Diferencia simétrica, valores unicos.
+print(f"Set a: {a}")
+print(f"Set b: {b}")
+print(f"Longitud del set: {len(a)}")
+print(f"Se encuentra el numero 4?: {4 in a}")  # Para saber si está el elemento en el set
+a.add(7)  # Añadimos un elemento al set.
+print(a)
+c = (11, 12, 13)  # Cun update() usamos una lista para añadir elementos a un set.
+b.update(c)
+print(b)
+if 13 in b:  # Con remove() eliminamos un item. Es recomendable verificar si existe antes de eliminar.
+    b.remove(13)
+print(b)
+item_remove = b.pop()  # Con pop() elimina un elemento al azar, podemos ver que elemento eliminó..
+print(item_remove)
+set1 = a.union(b)  # Une los elementos no repetidos.
+# Otra manera de hacerlo: set1 = a | b
+print(f"Elementos no repetidos: {set1}")
+set2 = a.intersection(b)  # Valores que se repiten en ambos set.
+# Otra manera: set2 = a & b
+print(f"Valores que se repiten: {set2}")
+set3 = a.difference(b)  # Devuelve la diferencia entre dos conjuntos
+# Otra forma: set3 = a - b
+print(f"La diferencia entre los dos conjuntos: {set3}")
+set4 = a.symmetric_difference(b)  # Diferencia simétrica, valores unicos.
+# Otra manera: set4 = a ^ b
+print(f"Valores únicos de los dos set: {set4}")
+print(f"Tienen los dos conjuntos algún elemento en común?: {a.isdisjoint(b)}")
+b.clear()  # Vaciar un set.
+del a  # Eliminar un set.
+lista9 = (1, 1, 3, 8, 6, 9, 5, 8)
+print(lista9)
+set6 = set(lista9)  # Al pasar una lista a set se pierden los elementos repetidos.
+print(set6)
+numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}  # numbers es el superset de numbers_pares
+numbers_pares = {0, 2, 4, 6, 8, 10}  # numbers_pares es subset de numbers
+print(numbers.issubset(numbers_pares))  # Para saber si es subset, en este caso sería falso.
+print(numbers.issuperset(numbers_pares))  # Para comprobar si es superset, daría true
+
+# EJERCICIO
+# Soy profesora y me encanta inspirar y enseñar a la gente.
+# ¿Cuántas palabras únicas se han usado en la oración?
+# Utilice los métodos de división y configure para obtener las palabras únicas.
+
+cadena_frase = "Soy profesora y me encanta inspirar y enseñar a la gente"
+list_cadena = cadena_frase.split()
+print(list_cadena)
+set_cadena = set(list_cadena)
+print(set_cadena)
+print(f"Hay: {len(set_cadena)} palabras únicas")
