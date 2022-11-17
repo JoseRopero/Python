@@ -141,14 +141,45 @@ del tupla6  # Eliminamos la tupla
 
 print()
 
-# 6. Diccionario. Tipo de colección desordenada, modificable e indexada. No hay duplicados.
+# 6. Diccionario. Tipo de colección desordenada, modificable e indexada (clave:valor). No hay duplicados.
 print("DICCIONARIO:")
+dic_empty = dict()
+dic_empty2 = {}
+dic_datos = {
+    'Nombre': 'Jose',
+    'Apellido': 'Ropero',
+    'Edad': 39,
+    'Ciudad': 'Malaga',
+    'is_married': True,
+    'Skills': ['JAVA', 'Python', 'C#', 'Spring'],
+    'Direccion': {'Calle': 'Esta misma', 'CP': 29167}
+    }
+print(dic_datos)
+print(f"La longitud del diccionario es: {len(dic_datos)}")
 diccionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4}  # Inicializamos un diccionario.
+print(diccionario)
 print(diccionario['a'])  # Imprime el valor de la clave.
+# print(diccionario['e'])  Si la clave no existe nos devuelve un error. Podemos verificar si existe primero o usar...
+print(diccionario.get('e'))  # Método get(), si no existe nos devuelve None.
+dic_datos['Trabajo'] = 'Aluminio'  # Añadiendo elementos al diccionario.
+dic_datos['Skills'].append('SQL')
+print(dic_datos)
+print(f"Existe la clave Hobbies en el diccionario?: {'Hobbies' in dic_datos}")  # Para verificar si existe una clave.
+print(dic_datos.keys())  # Imprime una lista con las claves.
+print(dic_datos.values())  # Imprime una lista con los valores.
+list_dic = dic_datos.items()  # Pasa el diccionario a una lista de tuplas.
+print(list_dic)
 resultado = diccionario['a']  # Asignamos el valor a la variable.
 diccionario['c'] = 54  # Cambiamos el valor de la clave.
-diccionario.pop('d')  # Elimina la clave valor.
+print(diccionario)
+diccionario.pop('d')  # Elimina la clave y el valor.
+print(diccionario)
+diccionario.popitem()  # Elimina el ultimo item
+print(diccionario)
 del diccionario['a']  # Otra manera de eliminar.
+print(diccionario)
+diccionario.clear()  # Vaciar
+del diccionario  # Eliminar
 print()
 
 # 7. Conjuntos(set). Colección desordenada, no indexada e inmutable, podemos agregar nuevos elementos. No duplicados
