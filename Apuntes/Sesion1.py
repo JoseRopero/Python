@@ -9,7 +9,8 @@ print("El dato es: {0}".format(dato))  # Esta es una manera de imprimir la varia
 print(f"El dato es: {dato}")  # Otra manera de darle formato.
 print("Otra formato : %d" % dato)  # Otro formato: %s, %f, %d
 print(f"Para limitar los dígitos de los decimales {dato} / {dato2} = {dato / dato2:.2f}")
-print()
+
+print("=========================================================================================================")
 
 # 2. Operaciones con str.
 print("OPERACIONES CON STR:")
@@ -51,7 +52,8 @@ print(f"Pasamos una cadena a lista: {listaTexto}")
 cadena2 = ' '.join(listaTexto)  # Pasa una lista a una cadena con espacios.
 cadena3 = '-'.join(listaTexto)  # Entre las comillas podemos poner lo que queramos
 print(cadena3)
-print()
+
+print("=========================================================================================================")
 
 # 3. Conversiones de datos.
 print("CONVERSIONES:")
@@ -61,7 +63,8 @@ stringN = str(n)
 print("El numero es: " + stringN)  # Con los string podemos usar la concatenación.
 n1 = abs(-9)  # Valor absoluto
 print(f"El valor absoluto: {n1}")
-print()
+
+print("=========================================================================================================")
 
 # 4. Trabajamos con las listas. Tipo de colección ordenada y modificable. Admite duplicados.
 print("LISTAS:")
@@ -117,7 +120,27 @@ lista3.sort()  # Ordenamos la lista.
 print(f"Ordenamos la lista: {lista3}")
 lista3.sort(reverse=True)
 print(f"Revertimos la lista: {lista3}")
-print()
+
+print("=========================================================================================================")
+
+# 4.1 List comprehensions. Son una forma de crear listas de una manera elegante simplificando el código al máximo.
+print("LIST comprehensions:")
+lista_num = [1, 2, 34, 86, 4, 5, 99, 890, 45]
+lista_pares = [num for num in lista_num if num % 2 == 0]
+print(f"list comprehensions de pares: {lista_pares}")
+# Estructura: [expresion(i) for i in list if condición]
+# Ejemplo: Capitalizar las palabras de una lista
+lista_palabras = ['casa', 'perro', 'puerta', 'pizza']
+cap = [palabra.title() for palabra in lista_palabras]
+print(cap)
+# Ejemplo: Calcular los cuadrados del 0 al 9
+lista_cuadrados = [num**2 for num in range(10)]
+print(lista_cuadrados)
+# Ejemplo: Calcular los cuadrados del 0 al 9 de los números pares
+lista_cuadrados_pares = [num**2 for num in range(10) if num % 2 == 0]
+print(lista_cuadrados_pares)
+
+print("=========================================================================================================")
 
 # 5. Tupla. Tipo de colección ordenada e inmutable. Permite duplicados.
 print("TUPLA:")
@@ -139,7 +162,7 @@ tupla6 = tupla1 + tupla5  # Con los operadores podemos unir dos o más tupla.
 print(tupla6)
 del tupla6  # Eliminamos la tupla
 
-print()
+print("=========================================================================================================")
 
 # 6. Diccionario. Tipo de colección desordenada, modificable e indexada (clave:valor). No hay duplicados.
 print("DICCIONARIO:")
@@ -180,7 +203,8 @@ del diccionario['a']  # Otra manera de eliminar.
 print(diccionario)
 diccionario.clear()  # Vaciar
 del diccionario  # Eliminar
-print()
+
+print(print("========================================================================================================="))
 
 # 7. Conjuntos(set). Colección desordenada, no indexada e inmutable, podemos agregar nuevos elementos. No duplicados
 print("SETS:")
@@ -226,11 +250,13 @@ numbers_pares = {0, 2, 4, 6, 8, 10}  # numbers_pares es subset de numbers
 print(numbers.issubset(numbers_pares))  # Para saber si es subset, en este caso sería falso.
 print(numbers.issuperset(numbers_pares))  # Para comprobar si es superset, daría true
 
+print("=========================================================================================================")
+
 # EJERCICIO
 # Soy profesora y me encanta inspirar y enseñar a la gente.
 # ¿Cuántas palabras únicas se han usado en la oración?
 # Utilice los métodos de división y configure para obtener las palabras únicas.
-
+print("EJERCICIO")
 cadena_frase = "Soy profesora y me encanta inspirar y enseñar a la gente"
 list_cadena = cadena_frase.split()
 print(list_cadena)

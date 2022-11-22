@@ -3,7 +3,7 @@
 1. Salida por pantalla
 2. Operaciones con cadena
 3. Conversiones de datos
-4. Trabajar con listas
+4. Trabajar con listas, list comprehensions
 5. Tupla
 6. Diccionario
 7. Conjuntos (set)
