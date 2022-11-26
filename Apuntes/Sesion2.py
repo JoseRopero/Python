@@ -4,7 +4,7 @@
 <= Menor o igual
 >  Mayor que
 >= Mayor o igual
-== Igualacion
+== Igualación
 != Distinto
 '''
 
@@ -13,10 +13,13 @@ b = 6
 c = 7
 
 resultado = (a > 5 and c < 7)  # Devuelve True o False.
-print(resultado)
+print(f"Ejemplo de condicional: {resultado}")
+print("")
 
 # TABLA DE LA VERDAD
 # and
+print("\tTABLA DE LA VERDAD")
+print("and:")
 print('True and true=', True and True)
 print('True and False=', True and False)
 print('False and True=', False and True)
@@ -25,6 +28,7 @@ print('False and False=', False and False)
 print("")
 
 # or
+print("or: ")
 print('True or true=', True or True)
 print('True or False=', True or False)
 print('False or True=', False or True)
@@ -38,17 +42,20 @@ print("")
 
 # is, is not, in, not in
 
-print('1 is 1', 1 is 1)                   # True - evalua si los dos son iguales
-print('1 is not 2', 1 is not 2)           # True - evalua si son distintos
+# print('1 is 1', 1 is 1)                   # True - evalua si los dos son iguales
+# print('1 is not 2', 1 is not 2)           # True - evalua si son distintos
 print('A in Asabeneh', 'A' in 'Asabeneh') # True - encuentra 'a' en el string
 print('B in Asabeneh', 'B' in 'Asabeneh') # False - La 'B' mayuscula no se encuentra en el string
 print('coding' in 'coding for all') # True - Encuentra la palabra
 print('a in an:', 'a' in 'an')      # True
-print('4 is 2 ** 2:', 4 is 2 ** 2)   # True
+# print('4 is 2 ** 2:', 4 is 2 ** 2)   # True
+
+print("==================================================================================================")
 
 # Sentencias condicionales.
-
+print("\tSentencias condicionales")
 # if
+print("if: ")
 
 a = 5
 b = 6
@@ -62,8 +69,11 @@ else:
 print('Fin del if')
 
 print("")
+print("Short hand")  # Forma corta del if
+print("a es mayor o igual que cinco y b es menor o igual que 6") if a >= 5 and b <= 6 else print("No ha introducido un mumero")
+print("")
 
-letra = input("Introduzca un caracter: ").lower()  # Lo pasamos a minusculas para no tener que comparar minusculas y mayusculas.
+letra = input("Introduzca un carácter: ").lower()  # Pasamos a minúsculas para no comparar minúsculas y mayúsculas.
 
 if letra == 'a' or letra == 'e' or letra == 'i' or letra == 'o' or letra == 'u':
     print("Es una vocal")
@@ -71,9 +81,9 @@ else:
     print("No es una vocal")
     
 print("")
-
+print("===============================================================================================================")
 # while
-
+print("while:")
 contador = 1
 while contador <= 10:  # Mientras la condicion sea True.
     if contador % 2 == 0:  # Sacamos los pares.
@@ -81,7 +91,7 @@ while contador <= 10:  # Mientras la condicion sea True.
     contador += 1
 
 print('')
-
+print("==============================================================================================================")
 # Palabras reservadas break y continue
 
 contador2 = 1
@@ -104,7 +114,7 @@ while contador3 <= 10:  # Mientras la condicion sea True.
     print(f'Valor de contador: {contador3}')
 
 print('')
-
+print("=============================================================================================================")
 # for
 
 lista = [1, 2, 3, 4, 'a', 6, 7, 8]
@@ -149,6 +159,7 @@ print('')
 for numero1 in range(5, 10):  # Valor inicial e incluido 5 y valor final excluido 10.
     print(numero1)
 
+print("=============================================================================================================")
 # Match
 
 valor = 4
