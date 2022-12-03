@@ -185,7 +185,7 @@ print(diccionario['a'])  # Imprime el valor de la clave.
 # print(diccionario['e'])  Si la clave no existe nos devuelve un error. Podemos verificar si existe primero o usar...
 print(diccionario.get('e'))  # Método get(), si no existe nos devuelve None.
 dic_datos['Trabajo'] = 'Aluminio'  # Añadiendo elementos al diccionario.
-dic_datos['Skills'].append('SQL')
+dic_datos['Skills'].append('SQL')  # Añadimos elemento a la lista dentro del diccionario.
 print(dic_datos)
 print(f"Existe la clave Hobbies en el diccionario?: {'Hobbies' in dic_datos}")  # Para verificar si existe una clave.
 print(dic_datos.keys())  # Imprime una lista con las claves.
