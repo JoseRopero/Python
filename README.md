@@ -13,3 +13,12 @@
 3. Palabras reservadas: break, continue
 4. Bucles: for
 5. Match
+## [Sesión 2:](./Apuntes/Sesion3.py)
+1. Variables Globales y Shadowing
+2. Funciones:
+    * Parámetros opcionales
+    * Parámetro variable (*args)
+    * Parámetro diccionario (*Kwargs)
+    * Operador ternario
+    * Lambda
+    * Funciones anidadas
