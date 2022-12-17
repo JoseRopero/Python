@@ -22,3 +22,7 @@
     * Operador ternario
     * Lambda
     * Funciones anidadas
+## Sesión 4:
+1. Uso de bibliotecas y paquetes externos:
+   * [Biblioteca turtle](./Apuntes/Sesion4/biblio_turtle.py)
+   * [Paquete PrettyTable](./Apuntes/Sesion4/pretty_table.py)
