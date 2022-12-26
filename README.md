@@ -25,6 +25,7 @@
 ## Sesión 4:
 1. Uso de bibliotecas y paquetes externos:
    * [Biblioteca turtle](./Apuntes/Sesion4/biblio_turtle.py)
+      * [Ejemplo de uso del módulo turtle](./Apuntes/Sesion4/turtle_proyecto.py)
    * [Paquete PrettyTable](./Apuntes/Sesion4/pretty_table.py)
 ## [Sesión 5:](./Apuntes/Sesion5/main.py)
    * Clases y objetos.
