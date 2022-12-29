@@ -31,3 +31,5 @@
 ## [Sesión 5:](./Apuntes/Sesion5/main.py)
    * Clases y objetos.
    * El constructor y los métodos
+## [Sesión 6:](./Apuntes/Sesion6.py)
+1. Herencia
