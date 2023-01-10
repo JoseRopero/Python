@@ -33,3 +33,7 @@
    * El constructor y los métodos
 ## [Sesión 6:](./Apuntes/Sesion6.py)
 1. Herencia
+## [Sesión 7:](./Apuntes/Sesion7/main.py)
+1. Manipulación de ficheros:
+    * Método open()
+    * Palabra reservada 'with'
