@@ -37,3 +37,7 @@
 1. Manipulación de ficheros:
     * Método open()
     * Palabra reservada 'with'
+## [Sesión 8:](./Apuntes/Session8/main.py)
+1. Manipulación de ficheros de datos:
+   * CSV
+   * Libreria Pandas
