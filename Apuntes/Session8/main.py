@@ -1,4 +1,6 @@
 import csv
+import statistics
+
 import pandas
 
 
@@ -28,4 +30,30 @@ datos = pandas.read_csv("weather_data.csv")  # No hace falta usar el método ope
 print(datos)
 print()
 print(datos["temp"])  # Imprimimos solo la columna de temperaturas. Mucho más fácil que el código anterior
+print()
 
+# Método para pasar los datos a diccionario en pandas:
+print("Pasar a diccionario los datos")
+datos_dic = datos.to_dict()
+print(datos_dic)
+print()
+print("Pasamos la lista de temperaturas a una list de Python")
+datos_list = datos["temp"].to_list()
+print(datos_list)
+print()
+
+# Calculamos la media de las temperaturas
+print(round(sum(datos_list)/len(datos_list), 2))  # Métodos de list
+print(round(statistics.mean(datos_list), 2))  # Métodos de statistics
+print(round(datos["temp"].mean(), 2))  # Métodos de panda
+print(datos["temp"].max())  # Imprime el máximo de la columna.
+
+# Otra forma de mostrar la columna es utilizando la variable. Panda convierte el nombre de la columna en una variable.
+print(datos.temp)
+print()
+
+# Para sacar los datos de una fila:
+print(datos[datos.day == "Monday"])
+print()
+# Sacamos la fila con la temperatura maxima.
+print(datos[datos.temp == datos.temp.max()])
