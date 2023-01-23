@@ -57,3 +57,39 @@ print(datos[datos.day == "Monday"])
 print()
 # Sacamos la fila con la temperatura maxima.
 print(datos[datos.temp == datos.temp.max()])
+print()
+
+# Para sacar solo un dato de la fila podemos almacenar la fila en una variable y después acceder al dato que queramos.
+monday = datos[datos.day == "Monday"]
+print(monday.condition)
+
+# Pasar la temperatura del lunes de Celsius a Fahrenheit
+temp_monday = monday.temp
+print(temp_monday * 1.8 + 32)  # Fórmula para pasar a F -> Los grados C * 1.8 y le sumamos 32
+print()
+
+# Crear un dataframe desde 0.
+data_dict = {
+    "students": ["Amy", "James", "Angela"],
+    "scores": [76, 56, 65]
+}
+datos_students = pandas.DataFrame(data_dict)
+print(datos_students)
+datos_students.to_csv("new_data.csv")
+print()
+
+# Ejercicio. Dado el csv del censo de ardillas. Sacar una tabla con el color del pelaje (grey, red, black) y el
+# total de ardillas de cada color.
+
+datos_censo_ardillas = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
+# Con len() obtenemos el número de filas
+datos_gray = len(datos_censo_ardillas[datos_censo_ardillas["Primary Fur Color"] == "Gray"])
+datos_red = len(datos_censo_ardillas[datos_censo_ardillas["Primary Fur Color"] == "Cinnamon"])
+datos_black = len(datos_censo_ardillas[datos_censo_ardillas["Primary Fur Color"] == "Black"])
+# Creamos un diccionario con los datos
+datos_ardillas_dic = {
+    "Color_fur": ["Gray", "Red", "Black"],
+    "Count": [datos_gray, datos_red, datos_black]
+}
+datos_ardillas_dataframe = pandas.DataFrame(datos_ardillas_dic)
+datos_ardillas_dataframe.to_csv("Count_ardillas.csv")
