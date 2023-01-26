@@ -93,3 +93,14 @@ datos_ardillas_dic = {
 }
 datos_ardillas_dataframe = pandas.DataFrame(datos_ardillas_dic)
 datos_ardillas_dataframe.to_csv("Count_ardillas.csv")
+
+# Iterar sobre un DataFrame. En pandas viene incorporado un loop para recorrer las filas
+student_dic = {
+    "student": ["Angela", "James", "Lily"],
+    "score": [56, 76, 98]
+}
+
+student_data_frame = pandas.DataFrame(student_dic)
+for (index, row) in student_data_frame.iterrows():
+    if row.student == "Angela":
+        print(row.score)

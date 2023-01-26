@@ -41,3 +41,7 @@
 1. Manipulación de ficheros de datos:
    * CSV
    * Libreria Pandas
+## [Sesión 9:](./Apuntes/Sesion9.py)
+   * List Comprehension
+   * Conditional list comprehension
+   * Dictionary Comprehension
