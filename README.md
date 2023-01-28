@@ -45,5 +45,6 @@
    * List Comprehension
    * Conditional list comprehension
    * Dictionary Comprehension
-## [Sesión 10:](Apuntes/Sesion10/Sesion10/Sesion10.py)
-   * Tkinter (Label, Button, Entry, Text, Spinbox...)
+## Sesión 10:
+   * [Tkinter (Label, Button, Entry, Text, Spinbox...)](./Apuntes/Sesion10/Sesion10.py)
+   * [Tkinter (Pack(), Place(), Grid())](./Apuntes/Sesion10/Layout_managers.py)
