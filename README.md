@@ -48,3 +48,5 @@
 ## Sesión 10:
    * [Tkinter (Label, Button, Entry, Text, Spinbox...)](./Apuntes/Sesion10/Sesion10.py)
    * [Tkinter (Pack(), Place(), Grid())](./Apuntes/Sesion10/Layout_managers.py)
+## [Sesión 11:](./Apuntes/Sesion11.py)
+   * try, except, else, finally, raise
