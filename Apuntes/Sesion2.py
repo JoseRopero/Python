@@ -109,7 +109,7 @@ while contador3 <= 10:  # Mientras la condicion sea True.
     contador3 += 1
     if contador3 % 2 == 0:
         print(f'{contador3} es par')
-        continue  # Todo lo que hay por debajo del continue no se ejecuta y vuelve a evaluar la expresion.
+        continue  # lo que hay por debajo del continue no se ejecuta y vuelve a evaluar la expresion.
         # En este caso hemos creado un bucle infinito.
     print(f'Valor de contador: {contador3}')
 

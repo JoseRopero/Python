@@ -50,3 +50,6 @@
    * [Tkinter (Pack(), Place(), Grid())](./Apuntes/Sesion10/Layout_managers.py)
 ## [Sesión 11:](./Apuntes/Sesion11.py)
    * try, except, else, finally, raise
+## [Sesión 12:](./Apuntes/Sesion12/main.py)
+   * Módulo SMTP
+   * Módulo datetime
