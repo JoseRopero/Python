@@ -53,3 +53,5 @@
 ## [Sesión 12:](./Apuntes/Sesion12/main.py)
    * Módulo SMTP
    * Módulo datetime
+## [Sesión 13:](./Apuntes/Sesion13/Sesion13.py)
+   * APIs
