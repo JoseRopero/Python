@@ -73,7 +73,7 @@ def comprobar_hora():
 
 
 MY_EMAIL = "pruebapython83@gmail.com"
-PASSWORD = "xttzcddyrtbrncss"
+PASSWORD = "password"
 
 while True:
     time.sleep(60)
