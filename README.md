@@ -57,4 +57,6 @@
    * APIs
 ## [Sesión 14:](./Apuntes/Sesion14.py)
    * Type Hints and Arrows
+## [Sesión 15:](./Apuntes/Sesion15.py)
+   * HTTP Requests (GET, POST, PUT, DELETE, Headers)
 
