@@ -61,4 +61,6 @@
    * HTTP Requests (GET, POST, PUT, DELETE, Headers)
 ## [Sesión 16:](./Apuntes/Sesion16/main.py)
    * Web Scraping (Beautiful Soup)
+## [Sesión 17:](./Apuntes/Session17)
+   * Web Scraping (Selenium)
 
