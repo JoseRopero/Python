@@ -63,4 +63,8 @@
    * Web Scraping (Beautiful Soup)
 ## [Sesión 17:](./Apuntes/Session17)
    * Web Scraping (Selenium)
+## Sesión 18:
+1. [Desarrollo Web (Flask)](./Apuntes/Session18/hello.py)
+2. [Advance Decorators](./Apuntes/Session18/advance_decorators.py)
+3. [Ejercicio Flask](./Apuntes/Session18/higher_lower.py)
 
